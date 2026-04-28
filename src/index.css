@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'Blue Screen';
+  src: local('Blue Screen Personal Use'),
+    url('./assets/fonts/BlueScreenPersonalUse.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+/*Colores*/
+/* #F6F5F8 Blanco*/
+/* #E5DDE8 Rosa muy claro*/
+/* #7243CF Morado*/
+/* #1F2527 Gris */
+/* #0D0D0C Negro*/
+/* #9E61A6 Rosa*/
+/* #2C2D2A Gris */
+/* #171117 Negro*/
+/* #BDA6BF Morado Claro*/
+/* #FAF9F9 Blanco*/
+:root {
+  --color-plum: #9e61a6;
+  --color-graphite: #2c2d2a;
+  --color-ink: #171117;
+  --color-lilac: #bda6bf;
+  --color-ivory: #faf9f9;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-display: 'Blue Screen', 'Bebas Neue', 'Impact', sans-serif;
+
+  font: 16px/1.6 var(--font-body);
+  color: var(--color-ivory);
+  background: var(--color-ink);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: monospace;
+  font-size: 15px;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+}
+
+h2 {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  color: #E5DDE8;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
