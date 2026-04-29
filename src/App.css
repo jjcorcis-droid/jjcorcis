@@ -254,14 +254,12 @@ main {
 }
 
 .info-card,
-.project-card,
-.contact-card {
-  background: rgba(44, 45, 42, 0.4);
+.project-card {
   border: 1px solid rgba(250, 249, 249, 0.08);
   border-radius: 20px;
   padding: 24px;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
-  background: #9e61a6;
+  
 }
 
 .info-card h3,
@@ -298,6 +296,9 @@ main {
 }
 
 .skills-grid span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 16px;
   border-radius: 999px;
   border: 1px solid rgba(250, 249, 249, 0.15);
@@ -305,6 +306,16 @@ main {
   font-size: 14px;
   letter-spacing: 1.5px;
   background: rgba(189, 166, 191, 0.15);
+}
+
+.skills-grid .degradado{
+  background: linear-gradient(170deg, #9f5aa8, #bc90c1);
+  color: #E5DDE8;
+}
+
+.skills-grid .degradado2{
+  background: linear-gradient(170deg, #7243CF, #9d7fd8);
+  color: #E5DDE8;
 }
 
 .projects-grid {
@@ -326,18 +337,30 @@ main {
 .project-head {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
-  gap: 24px;
+  grid-template-areas:
+    "title ."
+    "description meta";
+  column-gap: 24px;
+  row-gap: 8px;
   align-items: start;
 }
 
+.project-head h3 {
+  grid-area: title;
+  margin: 0;
+  color: #d29ad7;
+}
+
 .project-description {
-  margin: 8px 0 0;
+  grid-area: description;
+  margin: 0;
   color: rgba(250, 249, 249, 0.75);
 }
 
 .project-meta {
+  grid-area: meta;
   min-width: 160px;
-  background: rgba(189, 166, 191, 0.2);
+  background: #9e81a1;
   border-radius: 16px;
   padding: 12px 16px;
   text-align: center;
@@ -401,15 +424,25 @@ main {
   gap: 12px;
 }
 
+.project-tools__label {
+  flex-basis: 100%;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: rgba(250, 249, 249, 0.85);
+  margin-top: 4px;
+}
+
 .tool-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   min-width: 88px;
   padding: 10px 14px;
-  border-radius: 999px;
-  border: 1px solid rgba(250, 249, 249, 0.18);
-  background: rgba(189, 166, 191, 0.12);
+  border-radius: 0;
+  border: 1px solid rgba(250, 249, 249, 0.08);
+  background: rgba(250, 249, 249, 0.95);
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -425,16 +458,66 @@ main {
   color: rgba(255, 234, 234, 0.9);
 }
 
+.contact-availability {
+  border-radius: 16px;
+  border: 1px solid rgba(90, 200, 120, 0.45);
+  background: rgba(70, 190, 110, 0.16);
+  padding: 12px 16px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(214, 255, 226, 0.95);
+  margin: 12px 0 0;
+}
+
 .contact {
   gap: 24px;
 }
 
-.contact-card p {
-  margin: 0 0 12px;
+.contact-card {
+  display: grid;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
 }
 
-.contact-card p:last-child {
-  margin-bottom: 0;
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+  justify-content: center;
+}
+
+.contact-item p {
+  margin: 0;
+  text-align: center;
+}
+
+.contact-item a {
+  color: rgba(250, 249, 249, 0.85);
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #ffffff;
+  flex-shrink: 0;
+}
+
+.contact-icon img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
 }
 
 .site-footer {
@@ -464,6 +547,18 @@ main {
     grid-template-areas:
       "about"
       "tools";
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__content {
+    order: 1;
+  }
+
+  .hero__frame {
+    order: 2;
   }
 }
 
