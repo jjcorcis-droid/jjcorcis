@@ -190,7 +190,7 @@ main {
 
 .about-grid {
   display: grid;
-  grid-template-columns: minmax(220px, 1fr) minmax(0, 4fr);
+  grid-template-columns: minmax(220px, 2fr) minmax(0, 4fr);
   grid-template-areas: "tools about";
   gap: 32px;
   align-items: center;

@@ -1,4 +1,3 @@
-import insigniasElektra from '../assets/video/Elektra_InsigniasAlMerito_2023.mp4'
 import elektra1 from '../assets/img/elektra1.png'
 import elektra2 from '../assets/img/elektra2.png'
 import afterEffects from '../assets/img/after-effects-64.png'
@@ -8,10 +7,7 @@ import photoshop from '../assets/img/photoshop-64.png'
 import premiere from '../assets/img/premiere-pro-64.png'
 import audition from '../assets/img/audition-64.png'
 import maya from '../assets/img/maya.png'
-import prA1 from '../assets/projectA/teaserCreator.mp4'
-import prB1 from '../assets/projectB/escuchaSantander.mp4'
-import prC1 from '../assets/projectC/leanElektra.mp4'
-import prC2 from '../assets/projectC/leanElektra2.mp4'
+
 
 function ProjectsSection() {
   return (
@@ -41,7 +37,7 @@ function ProjectsSection() {
           <div className="project-gallery">
             <div className="gallery-item gallery-item--media">
               <video className="reel-video" controls preload="metadata">
-                <source src={prA1} type="video/mp4" />
+              
                 Tu navegador no soporta la reproducción de video.
               </video>
             </div>
@@ -82,7 +78,7 @@ function ProjectsSection() {
           <div className="project-gallery">
             <div className="gallery-item gallery-item--media">
               <video className="reel-video" controls preload="metadata">
-                <source src={prB1} type="video/mp4" />
+               
                 Tu navegador no soporta la reproducción de video.
               </video>
             </div>
@@ -129,13 +125,13 @@ function ProjectsSection() {
           <div className="project-gallery">
             <div className="gallery-item gallery-item--media">
               <video className="reel-video" controls preload="metadata">
-                <source src={prC1} type="video/mp4" />
+          
                 Tu navegador no soporta la reproducción de video.
               </video>
             </div>
             <div className="gallery-item gallery-item--media">
               <video className="reel-video" controls preload="metadata">
-                <source src={prC2} type="video/mp4" />
+
                 Tu navegador no soporta la reproducción de video.
               </video>
             </div>
@@ -200,7 +196,7 @@ function ProjectsSection() {
                 controls
                 preload="metadata"
               >
-                <source src={insigniasElektra} type="video/mp4" />
+             
                 Tu navegador no soporta la reproducción de video.
               </video>
             </div>
