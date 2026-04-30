@@ -22,7 +22,6 @@ import bbva6 from '../assets/img/bbva6.png'
 import bbva7 from '../assets/img/bbva7.png'
 import bbva8 from '../assets/img/bbva8.png'
 import insignias from '../assets/video/insignias.mp4'
-import campus from '../assets/video/campus.mp4'
 import campus1 from '../assets/img/campus1.jpg'
 import campus2 from '../assets/img/campus2.jpg'
 import campus3 from '../assets/img/campus3.jpg'
@@ -424,7 +423,7 @@ function ProjectsSection() {
           <div className="project-gallery">
             <div className="gallery-item gallery-item--media">
               <video className="reel-video reel-video--portrait" controls preload="metadata">
-                <source src={campus} type="video/mp4" />
+                <source src={insignias} type="video/mp4" />
                 Tu navegador no soporta la reproducción de video.
               </video>
             </div>
