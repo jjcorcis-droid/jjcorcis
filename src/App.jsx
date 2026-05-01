@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import './App.css'
 import AboutSection from './sections/AboutSection'
 import ContactSection from './sections/ContactSection'
@@ -10,6 +10,7 @@ import SiteHeader from './sections/SiteHeader'
 import SkillsSection from './sections/SkillsSection'
 
 function App() {
+  const [lang, setLang] = useState('es')
   const particles = useMemo(
     () =>
       Array.from({ length: 120 }, (_, index) => ({
@@ -56,18 +57,18 @@ function App() {
           />
         ))}
       </div>
-      <SiteHeader />
+      <SiteHeader lang={lang} onLangChange={setLang} />
 
       <main>
-        <HeroSection />
-        <AboutSection />
-        <ReelSection />
-        <SkillsSection />
-        <ProjectsSection />
-        <ContactSection />
+        <HeroSection lang={lang} />
+        <AboutSection lang={lang} />
+        <ReelSection lang={lang} />
+        <SkillsSection lang={lang} />
+        <ProjectsSection lang={lang} />
+        <ContactSection lang={lang} />
       </main>
 
-      <SiteFooter />
+      <SiteFooter lang={lang} />
     </div>
   )
 }

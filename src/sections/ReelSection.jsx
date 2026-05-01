@@ -1,10 +1,22 @@
 import demoReel from '../assets/video/demoReel.mp4'
 
-function ReelSection() {
+function ReelSection({ lang }) {
+  const copy = {
+    es: {
+      title: 'Demo reel',
+      fallback: 'Tu navegador no soporta la reproducción de video.',
+    },
+    en: {
+      title: 'Demo reel',
+      fallback: 'Your browser does not support video playback.',
+    },
+  }
+  const t = copy[lang]
+
   return (
     <section id="reel" className="section">
       <div className="section__header">
-        <h2>Demo reel</h2>
+        <h2>{t.title}</h2>
         <p></p>
       </div>
       <div className="reel-placeholder">
@@ -14,7 +26,7 @@ function ReelSection() {
           preload="metadata"
         >
           <source src={demoReel} type="video/mp4" />
-          Tu navegador no soporta la reproducción de video.
+          {t.fallback}
         </video>
       </div>
     </section>

@@ -2,13 +2,29 @@ import gmailIcon from '../assets/img/gmail.png'
 import linkedinIcon from '../assets/img/linkedin.png'
 import whatsappIcon from '../assets/img/whatsapp.png'
 
-function ContactSection() {
+function ContactSection({ lang }) {
+  const copy = {
+    es: {
+      title: 'Contacto',
+      availability: 'Disponible para proyectos freelance o contratación de tiempo completo.',
+      driveText: 'Si quieres ver más proyectos, visita mi',
+      driveLabel: 'Drive',
+    },
+    en: {
+      title: 'Contact',
+      availability: 'Available for freelance projects or full-time opportunities.',
+      driveText: 'If you want to see more projects, visit my',
+      driveLabel: 'Drive',
+    },
+  }
+  const t = copy[lang]
+
   return (
     <section id="contacto" className="section contact">
       <div className="section__header">
-        <h2>Contacto</h2>
+        <h2>{t.title}</h2>
         <p className="contact-availability">
-          Disponible para proyectos freelance o contratación de tiempo completo.
+          {t.availability}
         </p>
       </div>
       <div className="contact-card">
@@ -38,8 +54,15 @@ function ContactSection() {
         </div>
         <div className="contact-item">
           <p>
-            Si quieres ver más proyectos, visita mi <br />
-            <a href="https://drive.google.com/drive/folders/1E_4j8NJhkhwlaMcvWcihDo2cnw6wLmjN" target="_blank" rel="noreferrer"> Drive</a>.
+            {t.driveText} <br />
+            <a
+              href="https://drive.google.com/drive/folders/1E_4j8NJhkhwlaMcvWcihDo2cnw6wLmjN"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {t.driveLabel}
+            </a>
+            .
           </p>
         </div>
       </div>

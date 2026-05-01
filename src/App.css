@@ -135,6 +135,27 @@
   color: var(--color-plum);
 }
 
+.lang-toggle {
+  display: inline-flex;
+  border: 1px solid rgba(250, 249, 249, 0.2);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.lang-toggle button {
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.lang-toggle button.is-active {
+  background: rgba(250, 249, 249, 0.18);
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -841,6 +862,10 @@ main {
 
   .site-nav {
     row-gap: 12px;
+  }
+
+  .lang-toggle {
+    margin-top: 12px;
   }
 
   main {
