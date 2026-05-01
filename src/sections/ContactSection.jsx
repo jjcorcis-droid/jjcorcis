@@ -36,6 +36,12 @@ function ContactSection() {
             <a href="https://wa.me/+527351117236" target="_blank">7351117236</a>
           </p>
         </div>
+        <div className="contact-item">
+          <p>
+            Si quieres ver más proyectos, visita mi <br />
+            <a href="https://drive.google.com/drive/folders/1E_4j8NJhkhwlaMcvWcihDo2cnw6wLmjN" target="_blank" rel="noreferrer"> Drive</a>.
+          </p>
+        </div>
       </div>
     </section>
   )

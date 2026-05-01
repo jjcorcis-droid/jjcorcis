@@ -18,9 +18,6 @@ import bbva2 from '../assets/img/bbva2.png'
 import bbva3 from '../assets/img/bbva3.png'
 import bbva4 from '../assets/img/bbva4.png'
 import bbva5 from '../assets/img/bbva5.png'
-import bbva6 from '../assets/img/bbva6.png'
-import bbva7 from '../assets/img/bbva7.png'
-import bbva8 from '../assets/img/bbva8.png'
 import insignias from '../assets/video/insignias.mp4'
 import campus1 from '../assets/img/campus1.jpg'
 import campus2 from '../assets/img/campus2.jpg'
@@ -313,30 +310,6 @@ function ProjectsSection() {
                 onClick={() => openOfficeImage(bbva5, 'BBVA - Render 5')}
               >
                 <img src={bbva5} alt="BBVA - Render 5" />
-              </button>
-              <button
-                className="bbva-collage__item bbva-collage__item--stack-1"
-                type="button"
-                aria-label="Ver en grande: BBVA - Render 6"
-                onClick={() => openOfficeImage(bbva6, 'BBVA - Render 6')}
-              >
-                <img src={bbva6} alt="BBVA - Render 6" />
-              </button>
-              <button
-                className="bbva-collage__item bbva-collage__item--stack-2"
-                type="button"
-                aria-label="Ver en grande: BBVA - Render 7"
-                onClick={() => openOfficeImage(bbva7, 'BBVA - Render 7')}
-              >
-                <img src={bbva7} alt="BBVA - Render 7" />
-              </button>
-              <button
-                className="bbva-collage__item bbva-collage__item--final"
-                type="button"
-                aria-label="Ver en grande: BBVA - Render 8"
-                onClick={() => openOfficeImage(bbva8, 'BBVA - Render 8')}
-              >
-                <img src={bbva8} alt="BBVA - Render 8" />
               </button>
             </div>
           </div>
