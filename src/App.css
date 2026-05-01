@@ -2,6 +2,84 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: #171117;
+}
+
+.page::before {
+  content: "";
+  position: fixed;
+  inset: -20%;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(158, 97, 166, 0.35), transparent 45%),
+    radial-gradient(circle at 80% 30%, rgba(114, 67, 207, 0.28), transparent 45%),
+    radial-gradient(circle at 50% 80%, rgba(189, 166, 191, 0.25), transparent 50%);
+  filter: blur(10px);
+  opacity: 1;
+  z-index: -1;
+  animation: ambientGlow 12s ease-in-out infinite;
+}
+
+.page > :not(.particles):not(.particle-filter) {
+  position: relative;
+  z-index: 1;
+}
+
+.particle-filter {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.particles {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  filter: url("#goo");
+}
+
+@supports not (filter: url("#goo")) {
+  .particles {
+    filter: none;
+  }
+}
+
+.particle {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  opacity: var(--opacity);
+  background: linear-gradient(120deg, rgba(224, 195, 252, 0.9), rgba(142, 197, 252, 0.9));
+  animation: particleFloat var(--duration) ease-in-out infinite;
+  animation-delay: var(--delay);
+}
+
+@keyframes ambientGlow {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(6%, -5%, 0) scale(1.08);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes particleFloat {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, var(--drift), 0);
+  }
 }
 
 .site-header {

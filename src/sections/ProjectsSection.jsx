@@ -83,8 +83,7 @@ function ProjectsSection() {
             </span>
           </div>
           <div className="project-note">
-            Aviso: este proyecto pertenece a [Nombre de la empresa]. No
-            está autorizada la difusión o compartición de esta información.
+            Aviso: este proyecto pertenece a Soriano Ariza & Asociados. No está autorizada la difusión o divulgación de esta información.
           </div>
         </article>
       </div>
@@ -108,8 +107,8 @@ function ProjectsSection() {
             <div className="gallery-item gallery-item--media">
               <iframe
                 className="reel-video"
-                src="https://youtu.be/BeML7F96SKo"
-                title="Escucha Santander"
+                src="https://www.youtube.com/embed/BeML7F96SKo"
+                title="Proyecto BBVA"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               />
@@ -131,8 +130,7 @@ function ProjectsSection() {
             </span>
           </div>
           <div className="project-note">
-            Aviso: este proyecto pertenece a [Nombre de la empresa]. No
-            está autorizada la difusión o compartición de esta información.
+            Aviso: este proyecto pertenece a Santander MX. No está autorizada la difusión o divulgación de esta información.
           </div>
         </article>
       </div>
@@ -182,8 +180,7 @@ function ProjectsSection() {
             </span>
           </div>
           <div className="project-note">
-            Aviso: este proyecto pertenece a [Nombre de la empresa]. No
-            está autorizada la difusión o compartición de esta información.
+            Aviso: este proyecto pertenece a Grupo Elektra. No está autorizada la difusión o divulgación de esta información.
           </div>
         </article>
       </div>
@@ -254,8 +251,7 @@ function ProjectsSection() {
             </span>
           </div>
           <div className="project-note">
-            Aviso: este proyecto pertenece a [Nombre de la empresa]. No
-            está autorizada la difusión o compartición de esta información.
+            Aviso: este proyecto pertenece a Grupo Ferrer. No está autorizada la difusión o divulgación de esta información.
           </div>
         </article>
       </div>
@@ -354,8 +350,7 @@ function ProjectsSection() {
             </span>
           </div>
           <div className="project-note">
-            Aviso: este proyecto pertenece a [Nombre de la empresa]. No
-            está autorizada la difusión o compartición de esta información.
+            Aviso: este proyecto pertenece a BBVA España. No está autorizada la difusión o divulgación de esta información.
           </div>
         </article>
       </div>
@@ -397,8 +392,7 @@ function ProjectsSection() {
             </span>
           </div>
           <div className="project-note">
-            Aviso: este proyecto pertenece a [Nombre de la empresa]. No
-            está autorizada la difusión o compartición de esta información.
+            Aviso: este proyecto pertenece a Grupo Elektra. No está autorizada la difusión o divulgación de esta información.
           </div>
         </article>
       </div>
@@ -422,10 +416,13 @@ function ProjectsSection() {
           </div>
           <div className="project-gallery">
             <div className="gallery-item gallery-item--media">
-              <video className="reel-video reel-video--portrait" controls preload="metadata">
-                <source src={insignias} type="video/mp4" />
-                Tu navegador no soporta la reproducción de video.
-              </video>
+              <iframe
+                className="reel-video"
+                src="https://www.youtube.com/embed/G4bzxIoeuz8"
+                title="Proyecto video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
             </div>
           </div>
           <div className="project-tools">
@@ -438,8 +435,7 @@ function ProjectsSection() {
             </span>
           </div>
           <div className="project-note">
-            Aviso: este proyecto pertenece a [Nombre de la empresa]. No
-            está autorizada la difusión o compartición de esta información.
+            Aviso: este proyecto pertenece a Grupo Elektra. No está autorizada la difusión o divulgación de esta información.
           </div>
         </article>
       </div>
