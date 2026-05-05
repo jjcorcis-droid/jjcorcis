@@ -2,12 +2,12 @@ function SiteHeader({ lang, onLangChange }) {
   const labels = {
     es: {
       brand: 'Portafolio',
-      subtitle: 'Motion Graphic Artist',
+      subtitle: '3D Artist | 2D Artist',
       nav: ['Inicio', 'Sobre mí', 'Demo reel', 'Habilidades', 'Proyectos', 'Contacto'],
     },
     en: {
       brand: 'Portfolio',
-      subtitle: 'Motion Graphic Artist',
+      subtitle: '3D Artist | 2D Artist',
       nav: ['Home', 'About', 'Demo reel', 'Skills', 'Projects', 'Contact'],
     },
   }

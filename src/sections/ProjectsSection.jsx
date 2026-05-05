@@ -160,17 +160,6 @@ function ProjectsSection({ lang }) {
     <section id="proyectos" className="section">
       <div className="section__header">
         <h2>{t.title}</h2>
-        <p className="projects-drive">
-          {t.moreProjects}{' '}
-          <a
-            href="https://drive.google.com/drive/folders/1E_4j8NJhkhwlaMcvWcihDo2cnw6wLmjN"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {t.driveLabel}
-          </a>
-          .
-        </p>
       </div>
 
       <div className="projects-grid">

@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import './App.css'
 import AboutSection from './sections/AboutSection'
+import CompaniesSection from './sections/CompaniesSection'
 import ContactSection from './sections/ContactSection'
 import HeroSection from './sections/HeroSection'
 import ProjectsSection from './sections/ProjectsSection'
@@ -65,6 +66,7 @@ function App() {
         <ReelSection lang={lang} />
         <SkillsSection lang={lang} />
         <ProjectsSection lang={lang} />
+        <CompaniesSection lang={lang} />
         <ContactSection lang={lang} />
       </main>
 
