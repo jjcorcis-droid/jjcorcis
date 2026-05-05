@@ -3,7 +3,7 @@ import heroImage from '../assets/img/javier2.jpeg'
 function HeroSection({ lang }) {
   const copy = {
     es: {
-      eyebrow: 'Animador 3D - Artista 2D',
+      eyebrow: '3D Artist | 2D Artist',
       lead:
         '¡Hola! Mi nombre es Javier Cortés. Me gradué en Ingeniería en Animación y Videojuegos y cuento con un posgrado en Efectos Visuales por la Universidad Panamericana. Soy un apasionado de la animación 3D y 2D, los Motion Graphics y los efectos visuales (VFX). ¡Te invito a conocer mi trabajo!',
       primary: 'Hablemos de tu proyecto',
@@ -11,7 +11,7 @@ function HeroSection({ lang }) {
       alt: 'Render de animación de Javier Cortés',
     },
     en: {
-      eyebrow: '3D Animator - 2D Artist',
+      eyebrow: '3D Artist | 2D Artist',
       lead:
         'Hello! My name is Javier Cortés. I graduated in Animation and Video Game Engineering and hold a postgraduate degree in Visual Effects from Universidad Panamericana. I am passionate about 3D and 2D animation, Motion Graphics, and VFX. I invite you to take a look at my work!',
       primary: "Let's talk about your project",
