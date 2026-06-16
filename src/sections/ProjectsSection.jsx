@@ -57,14 +57,14 @@ function ProjectsSection({ lang }) {
       demi: {
         description:
           'Video promocional con formato tipo podcast, propiedad de Demi AI y desarrollado por NewForm, aprovechando el dinamismo de la escena para mantener el interés visual durante toda la pieza. La sección más destacada es Body 2, donde realicé una integración de Green Screen con tracking aplicado a la pantalla del teléfono celular, complementada con elementos Motion Graphics tanto dentro del dispositivo como en el entorno de la escena. Todos los Motion Graphics fueron diseñados y animados por mí, desde las animaciones mostradas en la pantalla del celular hasta los elementos gráficos externos que enriquecen la composición visual. Para la producción y postproducción se utilizaron Adobe Premiere Pro y Adobe After Effects.',
-        date: 'Por confirmar',
+        date: 'Mayo 2026',
         note:
           'Aviso: este proyecto pertenece a Demi AI y fue desarrollado por NewForm. No está autorizada la difusión o divulgación de esta información.',
       },
       labsPromo: {
         description:
           '11 Labs Promo, propiedad de 11 Eleven Labs y desarrollado por NewForm, es un proyecto de entrenamiento basado en un video de referencia existente. Todas las animaciones y elementos de Motion Graphics fueron creados íntegramente por mí, recreando y adaptando el estilo visual del material de referencia. El sitio web mostrado corresponde a una grabación real de la plataforma; sin embargo, se realizaron diversos ajustes y ediciones visuales para mejorar la narrativa, sincronizar la información con el ritmo del video y optimizar la presentación general del contenido. El proyecto requirió trabajo de animación, composición y adaptación visual para lograr una integración fluida entre la captura del sitio web y los elementos gráficos añadidos.',
-        date: 'Por confirmar',
+        date: 'Junio 2026',
         note:
           'Aviso: este proyecto pertenece a 11 Eleven Labs y fue desarrollado por NewForm. No está autorizada la difusión o divulgación de esta información.',
       },
@@ -128,14 +128,14 @@ function ProjectsSection({ lang }) {
       demi: {
         description:
           'Promotional podcast-style video owned by Demi AI and developed by NewForm, leveraging dynamic scene composition to maintain visual engagement throughout the piece. The most notable section is Body 2, where I implemented a Green Screen integration combined with screen tracking on the mobile phone display, enhanced with Motion Graphics both inside the device and throughout the scene. All Motion Graphics were designed and animated by me, including the animations displayed on the phone screen as well as the external graphic elements integrated into the environment. Adobe Premiere Pro and Adobe After Effects were used for production and post-production.',
-        date: 'To be confirmed',
+        date: 'May 2026',
         note:
           'Notice: this project belongs to Demi AI and was developed by NewForm. Distribution or disclosure of this information is not authorized.',
       },
       labsPromo: {
         description:
           '11 Labs Promo, owned by 11 Eleven Labs and developed by NewForm, is a training project created using an existing reference video as inspiration. All animations and Motion Graphics elements were designed and animated entirely by me, recreating and adapting the visual style of the original reference. The website featured in the video is an actual screen recording of the platform; however, several visual modifications and enhancements were applied to better support the narrative flow, synchronize information with the pacing of the edit, and improve the overall presentation. The project involved animation, compositing, and visual adaptation work to achieve a seamless integration between the website footage and the custom graphic elements.',
-        date: 'To be confirmed',
+        date: 'June 2026',
         note:
           'Notice: this project belongs to 11 Eleven Labs and was developed by NewForm. Distribution or disclosure of this information is not authorized.',
       },
