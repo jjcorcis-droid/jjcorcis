@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import './App.css'
 import AboutSection from './sections/AboutSection'
 import CompaniesSection from './sections/CompaniesSection'
@@ -71,6 +72,7 @@ function App() {
       </main>
 
       <SiteFooter lang={lang} />
+      <Analytics />
     </div>
   )
 }
