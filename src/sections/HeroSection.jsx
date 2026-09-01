@@ -1,4 +1,4 @@
-import heroImage from '../assets/img/javier2.jpeg'
+import heroImage from '../assets/img/javier4.jpeg'
 
 function HeroSection({ lang }) {
   const copy = {
